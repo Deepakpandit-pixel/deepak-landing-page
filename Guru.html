@@ -4,72 +4,232 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b12">
-<title>Guru Sports Analyst | Cricket Insights</title>
-<meta name="description" content="Join Guru Sports Analyst on Telegram for cricket match insights and team updates.">
+<meta name="theme-color" content="#08090d">
+<title>Guru Sports Analyst | Join Telegram</title>
+<meta name="description" content="Join Guru Sports Analyst on Telegram for cricket analysis and updates.">
 
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  min-height:100vh;
-  font-family:Arial,Helvetica,sans-serif;
-  color:#fff;
-  background:radial-gradient(ellipse at top,#17283b,#080b12 65%);
+:root {
+  --bg: #08090d;
+  --gold: #f5c451;
+  --light: #ffdf87;
+  --text: #f8f8fb;
+  --muted: #b4bac7;
 }
-.topline{height:4px;background:linear-gradient(90deg,#b57a13,#ffe7a0,#b57a13)}
-.wrap{width:min(100% - 30px,900px);margin:auto}
-header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:10px}
-.brand{font-weight:900;letter-spacing:1px;font-size:15px}
-.brand small{display:block;color:#adb8ca;font-size:10px;margin-top:6px;letter-spacing:2px}
-.mark{font-size:27px;margin-right:9px}
-.live{font-size:10px;color:#8de6b5;border:1px solid #316448;padding:8px 10px;border-radius:30px}
-.hero{
-  margin:35px 0;
-  text-align:center;
-  padding:clamp(25px,6vw,60px) 20px;
-  border:1px solid #f5c45155;
-  border-radius:25px;
-  background:linear-gradient(145deg,#151d2c,#0b0e17);
-  box-shadow:0 25px 70px #0007;
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 50% 0%, #18202c, var(--bg) 58%);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
 }
-.tag{display:inline-block;padding:10px 14px;border:1px solid #f5c45155;border-radius:30px;color:#ffe7a0;font-size:11px;font-weight:bold;letter-spacing:1px}
-h1{font-size:clamp(36px,7vw,66px);line-height:1.08;margin:25px 0 15px;font-weight:900;letter-spacing:-1px}
-h1 span{display:block;color:#f5c451}
-.subtitle{max-width:600px;margin:0 auto;color:#b8c1d1;line-height:1.8;font-size:16px}
-.features{max-width:580px;margin:30px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.feature{padding:16px 7px;background:#ffffff08;border:1px solid #ffffff12;border-radius:14px}
-.feature strong{display:block;color:#ffe7a0;font-size:12px;margin-bottom:8px}
-.feature span{font-size:11px;color:#aeb6c8;line-height:1.5}
-.join{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:min(100%,420px);min-height:60px;padding:16px;
-  background:linear-gradient(135deg,#ffe7a0,#f5c451,#dca12a);
-  color:#17130a;text-decoration:none;font-weight:900;font-size:14px;
-  border-radius:15px;box-shadow:0 12px 30px #f5c45130;
+
+.top {
+  height: 4px;
+  background: linear-gradient(90deg, #9f6c10, var(--light), #9f6c10);
 }
-.join:hover{filter:brightness(1.08)}
-.note{font-size:11px;line-height:1.7;color:#858da1;max-width:520px;margin:18px auto}
-.trust{color:#c1c9d7;font-size:12px;margin-top:25px;line-height:2}
-footer{text-align:center;color:#7f899c;font-size:11px;line-height:1.8;padding:10px 0 28px}
-@media(max-width:500px){
-  header{padding:17px 0}.brand{font-size:12px}.live{font-size:9px}
-  .hero{margin:20px 0;border-radius:20px}
-  .features{gap:5px}.feature{padding:13px 4px}
-  .feature strong{font-size:11px}.feature span{font-size:10px}
-  .subtitle{font-size:14px}h1{letter-spacing:-1px}
+
+.wrap {
+  width: min(100% - 26px, 760px);
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 18px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(140deg, var(--light), #d69b24);
+  font-size: 22px;
+}
+
+.brand small {
+  display: block;
+  margin-top: 4px;
+  font-size: 9px;
+  color: #aeb5c4;
+  letter-spacing: 1.5px;
+}
+
+.tag {
+  font-size: 9px;
+  font-weight: 800;
+  border: 1px solid #3b5d4a;
+  color: #a0edbd;
+  background: #102018;
+  padding: 8px 9px;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+
+main {
+  padding: 16px 0 30px;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  padding: clamp(25px, 6vw, 48px) clamp(17px, 5vw, 38px);
+  border: 1px solid #6b572b;
+  border-radius: 23px;
+  background: linear-gradient(150deg, #151a25, #0e1118 75%);
+  box-shadow: 0 20px 55px #0006;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #6d572a;
+  background: #211b10;
+  color: var(--light);
+  border-radius: 30px;
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.1px;
+}
+
+h1 {
+  font-size: clamp(35px, 8vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin: 20px 0 12px;
+  font-weight: 900;
+}
+
+h1 span {
+  color: var(--gold);
+}
+
+.sub {
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.benefits {
+  margin: 20px auto 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+
+.benefits span {
+  font-size: 11px;
+  color: #e4e6ec;
+  background: #ffffff08;
+  border: 1px solid #ffffff12;
+  border-radius: 30px;
+  padding: 8px 10px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: min(100%, 400px);
+  min-height: 58px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, var(--light), var(--gold) 60%, #d89b20);
+  color: #17130a;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 13px;
+  box-shadow: 0 9px 25px #f5c45122;
+  transition: transform .15s, filter .15s;
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+}
+
+.cta:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 4px;
+}
+
+.note {
+  margin: 12px 0 0;
+  color: #8f97a7;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+footer {
+  text-align: center;
+  padding: 4px 0 24px;
+  color: #777f8f;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+@media (max-width: 420px) {
+  .wrap { width: calc(100% - 22px); }
+  header { padding: 15px 0; }
+  .brand { font-size: 11px; }
+  .logo { height: 36px; width: 36px; }
+  .tag { font-size: 8px; padding: 7px; }
+  .card { border-radius: 19px; }
+  .sub { font-size: 14px; }
+  .benefits { gap: 5px; }
+  .benefits span { font-size: 10px; padding: 7px 8px; }
+  .cta { font-size: 12px; }
 }
 </style>
 
-<!-- Meta Pixel: existing Pixel ID -->
+<!-- Existing Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
-s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+!function(f,b,e,v,n,t,s){
+  if(f.fbq)return;
+  n=f.fbq=function(){
+    n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+  };
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','1623744675893616');
 fbq('track','PageView');
@@ -77,77 +237,71 @@ fbq('track','PageView');
 </head>
 
 <body>
-<div class="topline"></div>
+<div class="top"></div>
 <div class="wrap">
 
 <header>
-  <div style="display:flex;align-items:center">
-    <span class="mark">🏏</span>
-    <div class="brand">GURU SPORTS ANALYST
+  <div class="brand">
+    <div class="logo">🏏</div>
+    <div>
+      GURU SPORTS ANALYST
       <small>CRICKET • MATCH INSIGHTS</small>
     </div>
   </div>
-  <div class="live">● TELEGRAM CHANNEL</div>
+  <div class="tag">● TELEGRAM CHANNEL</div>
 </header>
 
 <main>
-<section class="hero">
-  <div class="tag">🏆 YOUR CRICKET ANALYSIS HUB</div>
+<section class="card">
 
-  <h1>READ THE GAME.<span>KNOW THE MATCH.</span></h1>
+  <div class="badge">🏆 &nbsp; CRICKET ANALYSIS HUB</div>
 
-  <p class="subtitle">
-    Get cricket match insights, team updates, and analysis in one place.
-    Join Guru Sports Analyst on Telegram and follow the game with more context.
+  <h1>GURU SPORTS<br><span>ANALYST</span></h1>
+
+  <p class="sub">
+    Cricket match analysis, team updates and key match insights —
+    all in one place. Join our Telegram channel and stay connected to the game.
   </p>
 
-  <div class="features">
-    <div class="feature">
-      <strong>🏏 Match Insights</strong>
-      <span>Analysis and key talking points</span>
-    </div>
-    <div class="feature">
-      <strong>📊 Team Updates</strong>
-      <span>Form, line-ups and match context</span>
-    </div>
-    <div class="feature">
-      <strong>⚡ Quick Access</strong>
-      <span>Updates directly on Telegram</span>
-    </div>
+  <div class="benefits">
+    <span>🏏 Match Insights</span>
+    <span>📊 Team Updates</span>
+    <span>⚡ Quick Access</span>
   </div>
 
-  <a class="join" id="joinTelegram"
+  <a class="cta"
+     id="joinTelegram"
      href="https://t.me/+H1ztaiKMiWQ5MTc1"
-     target="_blank" rel="noopener noreferrer">
-    ✈️ &nbsp; JOIN GURU SPORTS ANALYST
+     target="_blank"
+     rel="noopener noreferrer">
+    ✈️ &nbsp; JOIN TELEGRAM CHANNEL
   </a>
 
   <p class="note">
-    Cricket analysis is for informational and entertainment purposes only.
-    Match outcomes are uncertain; no result or prediction is guaranteed.
+    For informational and entertainment purposes.
+    Match outcomes are uncertain; no result is guaranteed.
   </p>
 
-  <div class="trust">
-    ✓ Mobile friendly &nbsp; ✓ Direct Telegram access &nbsp; ✓ Cricket updates
-  </div>
 </section>
 </main>
 
 <footer>
-  © <span id="year"></span> Guru Sports Analyst · All rights reserved.<br>
-  This page does not verify whether you joined the Telegram channel.
+  © <span id="year"></span> Guru Sports Analyst<br>
+  Telegram opens in a new tab. This page cannot verify actual channel membership.
 </footer>
+
 </div>
 
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
-// Counts a Telegram button click as Subscribe, not a confirmed channel join.
-document.getElementById('joinTelegram').addEventListener('click',function(){
-  if(typeof window.fbq==='function'){
-    window.fbq('track','Subscribe');
+// Tracks the button click, not a confirmed Telegram channel join.
+document.getElementById('joinTelegram').addEventListener('click', function() {
+  if (typeof window.fbq === 'function') {
+    window.fbq('track', 'Subscribe');
   }
 });
 </script>
+
 </body>
 </html>
